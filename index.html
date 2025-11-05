@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio - Gerhana Malik Ibrahim</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body id="top">
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo"><a href="#top">Portofolio</a></h1>
+      <nav>
+        <ul class="nav">
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#keahlian">Keahlian</a></li>
+          <li><a href="#proyek">Proyek</a></li>
+          <li><a href="#pendidikan">Pendidikan</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero container">
+    <div class="hero-text">
+      <h2>Halo, saya <span class="accent">Gerhana Malik Ibrahim</span> 👋</h2>
+      <p>Saya seorang <strong>Mahasiswa Teknik Informatika</strong> yang tertarik pada 
+      <em>Web Development</em>.
+      <a class="btn" href="#proyek">Lihat Proyek</a>
+      <a class="btn btn-outline" href="#kontak">Hubungi Saya</a>
+    </div>
+
+    <figure class="hero-figure">
+      <img src="gerhana.png" alt="Foto Profil">
+    </figure>
+  </section>
+
+  <main>
+
+<section id="tentang" class="container section">
+  <h3>Tentang Saya</h3>
+  <p>
+    Saya adalah seorang <strong>Mahasiswa Teknik Informatika</strong> yang memiliki ketertarikan besar 
+    dalam bidang <mark>Desain UI/UX</mark>. Saya menikmati proses menciptakan antarmuka yang tidak hanya 
+    indah secara visual tetapi juga mudah digunakan dan memiliki alur interaksi yang jelas.  
+    Saya percaya bahwa desain yang baik adalah hasil dari keseimbangan antara kreativitas dan logika.
+  </p>
+
+  <div class="grid-2">
+    <article>
+      <h4>Minat</h4>
+      <ul>
+        <li>UI/UX Design</li>
+        <li>Prototyping & Wireframing</li>
+        <li>Frontend Development</li>
+      </ul>
+    </article>
+
+    <article>
+      <h4>Tools & Skill</h4>
+      <ol>
+        <li>Figma & Canva</li>
+        <li>HTML dan CSS</li>
+        <li>Design Thinking & User Research</li>
+      </ol>
+    </article>
+  </div>
+</section>
+
+    <section id="keahlian" class="container section">
+  <h3>Keahlian</h3>
+  <div class="skills">
+    <div class="skill">
+      <img src="html.png" alt="HTML">
+      <span class="skill-name">HTML</span>
+    </div>
+    <div class="skill">
+      <img src="css.png" alt="CSS">
+      <span class="skill-name">CSS</span>
+    </div>
+    <div class="skill">
+      <img src="figma.png" alt="Figma">
+      <span class="skill-name">Figma</span>
+    </div>
+    <div class="skill">
+      <img src="canva.png" alt="Canva">
+      <span class="skill-name">Canva</span>
+    </div>
+    <div class="skill">
+      <img src="capcut.jpg" alt="CapCut">
+      <span class="skill-name">CapCut</span>
+    </div>
+  </div>
+</section>
+
+    <section id="proyek" class="container section">
+      <h3>Proyek</h3>
+      <div class="projects">
+        <article class="card">
+          <h4>Katalog Buku</h4>
+          <p>Web yang menampilkan koleksi buku dan detail buku menggunakan html,css, dan js.</p>
+        </article>
+
+        <article class="card">
+          <h4>Katalog Film</h4>
+          <p>Web yang menampilkan koleksi film, detail film, dan rating film menggunakan html,css, dan js.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="pendidikan" class="container section">
+      <h3>Pendidikan</h3>
+      <table class="edu-table">
+        <thead>
+          <tr>
+            <th>Sekolah/Universitas</th>
+            <th>Tahun</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>SDN 2 Sawah Lama</td>
+            <td>2011 - 2017</td>
+          </tr>
+          <tr>
+            <td>SMPN 12 Bandar Lampung</td>
+            <td>2017 - 2018</td>
+          </tr>
+          <tr>
+            <td>SMPN 26 Pekanbaru</td>
+            <td>2018 - 2020</td>
+          </tr>
+          <tr>
+            <td>SMAN 11 Pekanbaru</td>
+            <td>2020 - 2023</td>
+          </tr>
+          <tr>
+            <td>Universitas Lampung</td>
+            <td>2023 - sekarang</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="kontak" class="container section">
+      <h3>Kontak</h3>
+      <form class="contact-form">
+        <label>Nama</label>
+        <input type="text" required>
+        <label>Email</label>
+        <input type="email" required>
+        <label>Pesan</label>
+        <textarea rows="4" required></textarea>
+        <button class="btn" type="submit">Kirim</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>&copy; <span id="year"></span> Gerhana Malik Ibrahim</small>
+      <a href="#top" class="to-top">Kembali ke atas ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
